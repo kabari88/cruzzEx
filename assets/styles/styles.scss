@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;500;700&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//my variables
+$background-color:#34495e;
+$color:#fff;
+$span:#f7b708;
+$font1: 'Poppins';
+$btn-color:#05c90e;
+
+body{
+    font-family: 'poppins', sans-serif;
+
+    .header-row{
+        height: 40px;
+        width: 100%;
+        background-color: #031b3a;
+        justify-content: center;
+        align-items: center;
+
+        .row-item{
+            display: flex;
+    
+            p{
+                color: $span;
+                font-size: 10px;
+                padding-top: 10px;
+                }
+        }
+        
+        .mail{
+            padding-left: 37px;
+        }
+        .address{
+            padding-left: 90px;
+        }
+        .socials{
+            display: flex;
+            padding-left: 590px;
+    
+            li{
+                list-style: none;
+                color: $span;
+                padding-left: 25px;
+                font-size: 10px;
+                padding-top: 10px;
+            }
+        }
+    }
+   
+    nav{
+        height: 80px;
+        width: 100%;
+        background: $background-color;
+
+        .logo{
+            font-size: 35px;
+            font-weight: bold;
+            color: $color;
+            line-height: 80px;
+            padding: 0 100px;
+            
+            span{
+                font-size: 45px;
+                color: $span;
+            }
+        }
+        
+        ul{
+            float: right;
+            margin-right: 40px;
+
+            li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 8px;
+                line-height: 80px;
+
+                a{
+                    text-decoration: none;
+                    color: $span;
+                    font-size: 18px;
+                    border: 1px solid transparent;
+                    padding: 7px 10px;
+                    border-radius: 3px;
+                        &:hover{
+                            border: 1px solid #fff;
+                        }
+                }
+
+                .active{
+                    border: 1px solid #fff;
+                }
+        
+            }
+        }
+
+        #icon{
+            color: $span;
+            font-size: 30px;
+            line-height: 80px;
+            float: right;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+ 
+    }
+
+
+}
+
+.hero-wrapper{
+   background-image: url(../img/bg.jpg);
+   background-repeat: no-repeat;
+   min-height: 100vh;
+   background-size: cover;
+   background-position: center;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   
+   .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .hero-content {
+        max-width: 550px;
+        margin: 0 auto;
+        text-align: center;
+
+       .hero-text {
+            margin: 0;
+            font-size: 40px;
+            font-family: $font1;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #fff;
+            .color-text{
+                color: $span;
+            }
+        }
+
+        .prg{
+            margin: 0;
+            font-size: 20px;
+            font-weight: 300;
+            color:$btn-color;
+            margin-bottom: 20px;
+        }
+        
+         .create{
+            background-color: $span;
+            padding: 8px 20px;
+        border-radius: 10px;
+        }
+        
+        .login{
+            background-color:$btn-color;
+            padding: 8px 20px;
+        border-radius: 10px;
+        }
+        .cnt{
+            font-size: 12px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 20px;
+        }
+    }
+   }
+}
+
+
+
